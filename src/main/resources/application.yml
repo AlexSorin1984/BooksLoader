@@ -1,0 +1,35 @@
+spring:
+  application:
+    name: books-loader
+  data:
+    cassandra:
+      keyspace-name: main
+      username: etGaWYpmvNuGkbqrBfwxvqDP
+      password: 6BYOqjFqm0KLr5,0o3i,WZGJask,NWdEzJ02SKZDW0HPBSIxhmswO4G3PS1GLWoRMISt4C-WmO-RwwN2Xngix+pEI4_hyUUThL8SSqNuZ9QgPKpPar3T_daITCZ,1fJQ
+      schema_action: recreate
+      request:
+        timeout: 10s
+      connection:
+        connect-timeout: 10s
+        init-query-timeout: 10s
+
+datastax.astra:
+  secure-connect-bundle: secure-connect-books2.zip
+
+astra.db:
+  id: 4510437f-d9c4-44a8-8c8c-cf5e9ad6f066-1
+  region: europe-west1
+  keyspace: main
+  application.token: AstraCS:etGaWYpmvNuGkbqrBfwxvqDP:5c3831600c92d873a5331380618743ccc323376d2640e11d3cb1d94e8010e0ba
+
+datadump.location:
+  author: /Users/so043559/Downloads/books-loader/src/main/resources/DumpFiles/test-authors.txt
+  works: /Users/so043559/Downloads/books-loader/src/main/resources/DumpFiles/test-works.txt
+
+
+
+
+
+
+
+
